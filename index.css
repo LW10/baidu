@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  height: 100%;
+}
+body{
+  display: flex;          
+  flex-direction: column; /*控制主体*/
+  font-size: 15px;        
+  font-family: arial;     
+}
+.page-header{
+  padding-top: 25px;
+  padding-right: 40px;/*控制右上导航框边距*/
+  text-align: right;
+}
+
+.page-header nav a{
+  font-size: 15px;
+  font-weight: 700;/*控制右上导航框字大小*/
+  color: #333;
+  margin-left: 20px;
+}
+.page-header nav a:last-child{
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  background: #38f;/*特殊框加背景等*/
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 23px;
+}
+.page-mainer{
+  flex: 1;
+  text-align: center; 
+  margin-top: 100px; 
+}
+.page-mainer .logo-container img{
+  width: 270px;
+  height: 135px;
+  margin-bottom: 22px;
+}
+.form-container form{
+  display: flex;
+  justify-content: center;
+}
+.form-container .form-search{
+  display: inline-block;
+  width: 539px;
+  height: 50px;
+  border: 1px solid #b6b6b6;
+  border-right: 0;
+  outline: none;
+  line-height: 34px;
+  padding-left: 10px;
+}
+.form-container .submit-btn{
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: #3385ff;
+  border: 1px solid #3385ff;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-container .submit-btn:hover{
+  opacity: 0.8;
+}
+.page-footer{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.page-footer .footer-info{
+  margin-top: 15px;
+  color: #999;
+}
+
+.page-footer .footer-info a{
+  color: #999;
+  margin-right: 15px;
+}
+.page-footer .footer-info a:last-child{
+  margin-right: 0;
+}
